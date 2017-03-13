@@ -15,7 +15,7 @@ if(isset($_POST['email']) && isset($_POST['password'])) {
 	if (isset($_POST['item']) && strlen($_POST['item']) > 0) {
 		$item = $_POST['item'];
 	}
-} elseif (isset($_GET['key']) && $_GET['key'] == $_config['teamId']) {
+} elseif (isset($_GET['key']) && $_GET['key'] == $_config['apikey']) {
 	// is this an API request? if a valid key is provided, remember the user/pass for use
 	$email = $_config['email'];
 	$password = $_config['password'];
